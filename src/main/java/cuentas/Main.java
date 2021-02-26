@@ -1,13 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cuentas;
 
 /**
+ * Clase principal donde se inicializa un obejeto de tipo CCuenta y se realizan
+ * las operaciones retirar ingresar y se muestra el saldo.
  *
  * @author Eduardo Palacios Moreno
+ * @version 26/02/2021/A
  */
 public class Main {
 
@@ -18,6 +16,15 @@ public class Main {
         operativa_cuenta(0);
     }
 
+    /**
+     * Método estático que realiza las funciones principales de la clase
+     * utilizando los métodos de la clase CCuenta.
+     * @param cuenta1 se inicializa el objeto con parámetros definidoos.
+     * @param saldoActual se guardara el saldo actual.
+     * @param cantidad
+     * @exception e indica que se ha retirado mal.
+     * @exception e indica que se ha ingresadoo de forma incooorrecta.
+     */
     private static void operativa_cuenta(float cantidad) {
         CCuenta cuenta1;
         double saldoActual;
